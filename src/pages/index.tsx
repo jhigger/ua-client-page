@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 
 const Home: NextPage = () => {
@@ -12,7 +13,9 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Navbar />
-			<main className="container mx-auto min-h-screen"></main>
+			<main className="container mx-auto min-h-screen px-4">
+				<Hero />
+			</main>
 		</>
 	);
 };
