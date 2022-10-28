@@ -23,7 +23,7 @@ const Hero = () => {
 			<div className="col-span-4 w-full px-4">
 				<img src="/assets/images/phone.png" alt="phone" />
 			</div>
-			<div className="col-span-3 flex w-full flex-col items-end gap-12 px-4">
+			<div className="col-span-3 flex w-full flex-col gap-12 px-4">
 				<Card
 					headingColor="text-green-500"
 					heading="3"
@@ -84,7 +84,7 @@ const Card = ({
 	text: string;
 }) => {
 	return (
-		<div className="w-max rounded-md bg-white p-5 shadow-lg ring-1 ring-gray-200 last:place-self-start">
+		<div className="w-max rounded-md bg-white p-5 shadow-lg ring-1 ring-gray-200 first:place-self-end">
 			<div className={`mb-2 text-4xl ${headingColor}`}>{heading}</div>
 			<div>{text}</div>
 		</div>
