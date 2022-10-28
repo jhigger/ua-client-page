@@ -32,7 +32,7 @@ const Navbar = () => {
 							state ? "block" : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 gap-4 font-semibold">
+						<ul className="items-center justify-center gap-4 space-y-8 font-semibold md:flex md:space-x-6 md:space-y-0">
 							{navigation.map((item, idx) => {
 								return (
 									<li
@@ -76,12 +76,12 @@ const Logo = () => {
 
 const CTA = () => {
 	return (
-		<div className="hidden md:inline-block">
+		<div className="mb-4 flex md:mb-0 md:inline-block">
 			<a
 				href="https://kairos-nextjs-solana.vercel.app/"
 				target="_blank"
 				rel="noreferrer"
-				className="rounded-md bg-indigo-600 py-3 px-4 text-white shadow hover:bg-indigo-700"
+				className="mx-auto w-full justify-center rounded-md bg-indigo-600 py-3 px-4 text-white shadow hover:bg-indigo-700 text-center"
 			>
 				Start Free Trial
 			</a>
