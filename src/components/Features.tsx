@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-const Feature = () => {
+const Features = () => {
 	return (
 		<section className="grid grid-cols-1 gap-4 pt-20 font-inter md:grid-cols-12">
 			<div className="col-span-full text-center lg:col-span-6 lg:text-start">
@@ -50,4 +50,4 @@ const Feature = () => {
 	);
 };
 
-export default Feature;
+export default Features;

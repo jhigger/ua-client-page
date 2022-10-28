@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import Feature from "../components/Feature";
+import Features from "../components/Features";
 
 const Home: NextPage = () => {
 	return (
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 			<Navbar />
 			<main className="container mx-auto min-h-screen p-4">
 				<Hero />
-				<Feature />
+				<Features />
 			</main>
 		</>
 	);
