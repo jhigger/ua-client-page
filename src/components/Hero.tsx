@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
 	return (
-		<div className="grid grid-cols-1 place-items-center items-center gap-4 pt-10 font-inter md:grid-cols-7 lg:grid-cols-12 lg:pt-0">
+		<section className="grid grid-cols-1 place-items-center items-center gap-4 pt-10 font-inter md:grid-cols-7 lg:grid-cols-12 lg:pt-0">
 			<div className="col-span-4 w-full text-center md:col-span-7 lg:col-span-5 lg:text-start">
 				<div className="mb-8 text-lg">
 					<span className="text-orange-500">#1 </span>
@@ -56,7 +56,7 @@ const Hero = () => {
 					text="Clients and counting..."
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 
