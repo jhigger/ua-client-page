@@ -2,7 +2,7 @@
 const Hero = () => {
 	return (
 		<section className="grid grid-cols-1 place-items-center items-center gap-4 pt-10 font-inter lg:grid-cols-12 lg:pt-0">
-			<div className="col-span-4 w-full text-center lg:col-span-5 lg:text-start">
+			<div className="col-span-4 text-center lg:col-span-5 lg:text-start">
 				<div className="mb-8 text-lg">
 					<span className="text-orange-500">#1 </span>
 					<span className="">
@@ -20,10 +20,10 @@ const Hero = () => {
 					applications needed, the first ever.
 				</p>
 			</div>
-			<div className="col-span-4 w-full">
+			<div className="col-span-4">
 				<img src="/assets/images/phone.png" alt="phone" />
 			</div>
-			<div className="col-span-4 flex w-full flex-col gap-12 lg:col-span-3">
+			<div className="col-span-4 flex flex-col gap-12 lg:col-span-3">
 				<Card
 					headingColor="text-green-500"
 					heading="3"
