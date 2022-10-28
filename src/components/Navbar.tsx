@@ -13,7 +13,7 @@ const Navbar = () => {
 	];
 
 	return (
-		<header className="border-b-[1px] border-gray-200">
+		<header className="sticky top-0 border-b-[1px] border-gray-200">
 			<nav className="w-full border-b bg-white md:static md:border-0">
 				<div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
 					<div className="flex items-center justify-between py-3 md:block md:py-5">
@@ -81,7 +81,7 @@ const CTA = () => {
 				href="https://kairos-nextjs-solana.vercel.app/"
 				target="_blank"
 				rel="noreferrer"
-				className="mx-auto w-full justify-center rounded-md bg-indigo-600 py-3 px-4 text-white shadow hover:bg-indigo-700 text-center"
+				className="mx-auto w-full justify-center rounded-md bg-indigo-600 py-3 px-4 text-center text-white shadow hover:bg-indigo-700"
 			>
 				Start Free Trial
 			</a>
