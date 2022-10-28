@@ -20,10 +20,10 @@ const Hero = () => {
 					applications needed, the first ever.
 				</p>
 			</div>
-			<div className="col-span-4 w-full px-4">
+			<div className="col-span-4 w-full">
 				<img src="/assets/images/phone.png" alt="phone" />
 			</div>
-			<div className="col-span-3 flex w-full flex-col gap-12 px-4">
+			<div className="col-span-3 flex w-full flex-col gap-12">
 				<Card
 					headingColor="text-green-500"
 					heading="3"
