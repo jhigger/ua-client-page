@@ -23,33 +23,13 @@ const Hero = () => {
 			<div className="col-span-4 w-full px-4">
 				<img src="/assets/images/phone.png" alt="phone" />
 			</div>
-			<div className="col-span-3 flex w-full flex-col gap-12 px-4">
+			<div className="col-span-3 flex w-full flex-col items-end gap-12 px-4">
 				<Card
 					headingColor="text-green-500"
 					heading="3"
 					text="Bots released"
-					end
 				/>
-				<ul className="w-max">
-					<li className="mb-8">
-						<span className="in mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full bg-indigo-500 text-white">
-							&#10004;
-						</span>
-						Quick Setup
-					</li>
-					<li className="mb-8">
-						<span className="in mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-white">
-							&#10004;
-						</span>
-						<span>24/7 Support</span>
-					</li>
-					<li className="">
-						<span className="in mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full bg-green-500 text-white">
-							&#10004;
-						</span>
-						<span>Constant Feature Updates</span>
-					</li>
-				</ul>
+				<List />
 				<Card
 					headingColor="text-orange-500"
 					heading="100+"
@@ -60,22 +40,51 @@ const Hero = () => {
 	);
 };
 
+const List = () => {
+	const list = [
+		{
+			color: "bg-indigo-500",
+			name: "Quick Setup",
+		},
+		{
+			color: "bg-orange-500",
+			name: "24/7 Support",
+		},
+		{
+			color: "bg-green-500",
+			name: "Constant Feature Updates",
+		},
+	];
+
+	return (
+		<ul className="w-max">
+			{list.map((obj) => {
+				return (
+					<li className="mb-8" key={obj.name}>
+						<span
+							className={`mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full ${obj.color} text-white`}
+						>
+							&#10004;
+						</span>
+						{obj.name}
+					</li>
+				);
+			})}
+		</ul>
+	);
+};
+
 const Card = ({
 	headingColor,
 	heading,
 	text,
-	end,
 }: {
 	headingColor: string;
 	heading: string;
 	text: string;
-	end?: boolean;
 }) => {
-	const placeEnd = end ? "place-self-end" : "";
 	return (
-		<div
-			className={`w-max rounded-md bg-white p-5 shadow-lg ring-1 ring-gray-200 ${placeEnd}`}
-		>
+		<div className="w-max rounded-md bg-white p-5 shadow-lg ring-1 ring-gray-200 last:place-self-start">
 			<div className={`mb-2 text-4xl ${headingColor}`}>{heading}</div>
 			<div>{text}</div>
 		</div>
