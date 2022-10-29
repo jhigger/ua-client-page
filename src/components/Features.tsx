@@ -1,5 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 const Features = () => {
+	const features = [
+		{
+			image: "/assets/images/utilityape.png",
+			name: "Engagement Bot",
+			description:
+				"Engage to earn, raid to earn twitter integration, item store, bank system, community quests, games, events, and future updates.",
+			link: "#",
+		},
+		{
+			image: "/assets/images/utilityape.png",
+			name: "Security Bot",
+			description:
+				"Pin verification system, OTP for high risk staff activities, bot kicker for spammers/scammers, customizable unverified user kicker and future updates.",
+			link: "#",
+		},
+		{
+			image: "/assets/images/utilityape.png",
+			name: "NFT Tools",
+			description:
+				"NFT floor price tracker, whitelist submission tools, NFT listings, NFT sales, token price tracking, holder verification, and more.",
+			link: "#",
+		},
+		{
+			image: "/assets/images/utilityape.png",
+			name: "Enterprise License",
+			description:
+				"Included engagement bot, security bot, NFT tools, and fully customizable additional bot features with mod support on bot support.",
+			link: "#",
+		},
+	];
+
 	return (
 		<section className="grid grid-cols-1 gap-4 pt-20 font-inter md:grid-cols-12">
 			<div className="col-span-full text-center lg:col-span-6 lg:text-start">
@@ -20,27 +51,23 @@ const Features = () => {
 					community size, with a 3 week free trial – no obligations.
 				</p>
 			</div>
-			{[...Array(4)].map((_, idx) => {
+			{features.map((feature, idx) => {
 				return (
 					<div
 						key={idx}
 						className="col-span-full flex flex-col gap-6 rounded-3xl px-8 py-16 ring-indigo-500 hover:shadow-2xl hover:ring-1 md:col-span-6 lg:col-span-3"
 					>
 						<img
-							src="/assets/images/utilityape.png"
+							src={feature.image}
 							alt="icon"
 							width={64}
 							height={64}
 						/>
 						<h3 className="underlined w-max text-xl">
-							Engagement Bot
+							{feature.name}
 						</h3>
-						<p className="text-gray-500">
-							Engage to earn, raid to earn twitter integration,
-							item store, bank system, community quests, games,
-							events, and future updates.
-						</p>
-						<a href="javascript:void(0)" className="">
+						<p className="text-gray-500">{feature.description}</p>
+						<a href={feature.link} className="mt-auto">
 							Explore more &#129109;
 						</a>
 					</div>
