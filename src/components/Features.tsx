@@ -38,7 +38,7 @@ const Features = () => {
 					<span className="text-orange-500">#1 </span>
 					<span className="">Leading Discord Growth Tools</span>
 				</div>
-				<h2 className="mb-9 text-4xl">
+				<h2 className="mb-9 text-4xl leading-relaxed">
 					Over 100 clients in less
 					<br />
 					than 2 months of releasing.

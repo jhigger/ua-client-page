@@ -9,9 +9,9 @@ const Hero = () => {
 						Community growth tools in the space.
 					</span>
 				</div>
-				<h3 className="mb-9 text-4xl">
+				<h2 className="mb-9 text-4xl leading-relaxed">
 					Get Leading Engage-To-Earn and Social Web3 Tools
-				</h3>
+				</h2>
 				<p className="text-lg text-gray-500">
 					Increase Discord growth by 10x.
 					<br />
