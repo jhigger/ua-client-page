@@ -13,7 +13,7 @@ const Navbar = () => {
 	];
 
 	return (
-		<header className="sticky top-0 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
+		<header className="z-50 sticky top-0 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
 			<nav className="w-full border-b bg-white md:static md:border-0">
 				<div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
 					<div className="flex items-center justify-between py-3 md:block md:py-5">
