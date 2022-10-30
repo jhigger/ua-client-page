@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
+import How from "../components/How";
 import Navbar from "../components/Navbar";
 import Question from "../components/Question";
 import Why from "../components/Why";
@@ -16,11 +17,14 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Navbar />
-			<main className="container mx-auto min-h-screen p-4">
-				<Hero />
-				<Features />
-				<Why />
-				<Question />
+			<main className="min-h-screen py-4">
+				<div className="container mx-auto px-4">
+					<Hero />
+					<Features />
+					<Why />
+					<Question />
+				</div>
+				<How />
 			</main>
 		</>
 	);
