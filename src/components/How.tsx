@@ -83,8 +83,8 @@ const List = () => {
 							</div>
 						</span>
 						<div className="rounded-xl p-8 pl-12 ring-gray-200 hover:ring-1">
-							<h3 className="mb-4 text-xl">{item.heading}</h3>
-							<p className="">{item.content}</p>
+							<h3 className="mb-4 text-2xl">{item.heading}</h3>
+							<p className="text-gray-500">{item.content}</p>
 						</div>
 					</li>
 				);
