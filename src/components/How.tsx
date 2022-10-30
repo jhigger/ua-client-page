@@ -17,17 +17,17 @@ const How = () => {
 					<img
 						src="assets/svg/add_user.svg"
 						alt="illustration"
-						className="absolute right-80 top-64 h-1/4"
+						className="absolute right-[21rem] top-72 h-1/4"
 					/>
 					<img
 						src="assets/svg/chat_bot.svg"
 						alt="illustration"
-						className="absolute right-4 bottom-10 h-1/4"
+						className="absolute right-2 bottom-10 h-1/4"
 					/>
 					<img
 						src="assets/svg/app_data.svg"
 						alt="illustration"
-						className="absolute right-[21rem] bottom-10 h-[35%]"
+						className="absolute right-[22rem] bottom-10 h-1/3"
 					/>
 				</div>
 			</div>
