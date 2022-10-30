@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import How from "../components/How";
 import Navbar from "../components/Navbar";
 import Question from "../components/Question";
+import Raid from "../components/Raid";
 import Why from "../components/Why";
 
 const Home: NextPage = () => {
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
 					<Question />
 				</div>
 				<How />
+				<div className="container mx-auto px-4">
+					<Raid />
+				</div>
 			</main>
 		</>
 	);
