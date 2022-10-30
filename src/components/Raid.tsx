@@ -18,7 +18,7 @@ const Raid = () => {
 					<b>30x</b>
 				</p>
 			</div>
-			<div className="col-span-full w-full bg-indigo-500 ring-1  ring-indigo-500  lg:col-span-6">
+			<div className="col-span-full w-full bg-indigo-500 pt-4  pr-4  ring-1 ring-indigo-500 lg:col-span-6">
 				<img src="assets/svg/tweetstorm.svg" alt="illustration" />
 			</div>
 		</section>
