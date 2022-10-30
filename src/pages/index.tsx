@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import Features from "../components/Features";
+import Question from "../components/Question";
 import Why from "../components/Why";
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 				<Hero />
 				<Features />
 				<Why />
+				<Question />
 			</main>
 		</>
 	);
