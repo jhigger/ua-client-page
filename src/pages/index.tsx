@@ -4,6 +4,7 @@ import Features from "../components/Features";
 import Hero from "../components/Hero";
 import How from "../components/How";
 import Navbar from "../components/Navbar";
+import Pricing from "../components/Pricing";
 import Question from "../components/Question";
 import Raid from "../components/Raid";
 import Why from "../components/Why";
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
 				<How />
 				<div className="container mx-auto px-4">
 					<Raid />
+					<Pricing />
 				</div>
 			</main>
 		</>
