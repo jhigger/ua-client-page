@@ -74,7 +74,7 @@ const Products = () => {
 								</div>
 							);
 						})}
-						<button className="mt-4 w-max self-center rounded bg-indigo-500 py-4 px-6 text-white group-hover:bg-indigo-400">
+						<button className="mt-auto w-max self-center rounded bg-indigo-500 py-4 px-6 text-white group-hover:bg-indigo-400">
 							Get Started
 						</button>
 					</li>
