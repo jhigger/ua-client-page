@@ -10,7 +10,10 @@ const Why = () => {
 				</div>
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					We have the most competitive prices with reputable feedback
-					from well known projects such as than 2 months of releasing.
+					from well known projects such{" "}
+					<span className="underlined inline-block w-max font-bold leading-none">
+						Trippin Apes.
+					</span>
 				</h2>
 				<p className="text-gray-500">
 					We have onboarded one of best projects in the price
@@ -27,23 +30,30 @@ const Tabs = () => {
 	const [selected, setSelected] = useState(0);
 	const tabs = [
 		{
-			name: "Automated Tools",
+			name: "Engage-To-Earn",
 			contents: [
-				"Incredibly easy to setup",
-				"Effortless maintenance",
-				"Self sufficient interface",
+				"1. Allows users to easily like, RT, comment, and tweet easily to get rewarded",
+				"2. Bank system allows you to reward your holders/certain roles based on % earnedEffortless maintenance",
+				"3. Fully customizable engage system, can add or remove features such as games and coin flips",
+				"4. Additional features always added, most recent is comment attack and raffle system integrated with the feature",
 			],
 		},
 		{
-			name: "Setup Support",
-			contents: ["Efficient support", "Helpful staff", "Amazing guide"],
+			name: "Security Tools",
+			contents: [
+				"1. Allows you to keep your server safe with a simple verification system that can't be bypassed by bots",
+				"2. For sections such as announcements, OTC requirements to avoid hacks",
+				"3. Kick bots and spammers with a click of a button using our bot kicker, customizable",
+				"4. Additional security features implemented to keep servers safe",
+			],
 		},
 		{
-			name: "Minting Advantages",
+			name: "NFT Tools",
 			contents: [
-				"Refresing to get such a personal touch.",
-				"If you are going to use a passage.",
-				"Lorem Ipsum generators on the tend to repeat.",
+				"1.  Price tracker, NFT listings, sales, and traditional trackers",
+				"2. Holder verification system customizable",
+				"3. Whitelist submission tool",
+				"4. Additional implementational for NFT tools as clients request",
 			],
 		},
 	];
@@ -54,7 +64,7 @@ const Tabs = () => {
 
 	return (
 		<div className="col-span-full my-8 grid gap-8 lg:col-span-6">
-			<div className="row-span-1 flex w-full flex-wrap items-center justify-center gap-2 lg:justify-start">
+			<div className="row-span-1 flex w-full flex-wrap items-center justify-center gap-2">
 				{tabs.map((tab, idx) => {
 					const color =
 						selected === idx
@@ -72,12 +82,12 @@ const Tabs = () => {
 					);
 				})}
 			</div>
-			<ul className="row-span-6 flex flex-col justify-center gap-8 px-[20%] md:px-[25%] lg:px-[10%]">
+			<ul className="row-span-6 flex flex-col justify-center gap-8 px-[15%] md:px-[20%] lg:px-[5%]">
 				{tabs[selected]?.contents.map((content) => {
 					return (
-						<li key={content} className="flex items-center gap-2">
+						<li key={content} className="flex items-center gap-4">
 							<span
-								className={`mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full bg-indigo-500 text-white`}
+								className={`inline-flex h-4 w-4 items-center justify-center rounded-full bg-indigo-500 p-1 text-white`}
 							>
 								&#10004;
 							</span>
