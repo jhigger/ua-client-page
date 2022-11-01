@@ -47,15 +47,15 @@ const List = () => {
 	const list = [
 		{
 			color: "bg-indigo-500",
-			name: "Quick Setup",
+			name: "Supports all blockchains including ETH, SOL, and APTOS",
 		},
 		{
 			color: "bg-orange-500",
-			name: "24/7 Support",
+			name: "Marketing support with a collaboration RT",
 		},
 		{
 			color: "bg-green-500",
-			name: "Constant Feature Updates",
+			name: "Updates pushed automatically",
 		},
 	];
 
