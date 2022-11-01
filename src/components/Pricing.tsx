@@ -52,12 +52,15 @@ const Products = () => {
 	];
 
 	return (
-		<ul className="col-span-full flex flex-wrap justify-center gap-8" id='pricing'>
+		<ul
+			className="col-span-full flex flex-wrap justify-center gap-8"
+			id="pricing"
+		>
 			{products.map((item, idx) => {
 				return (
 					<li
 						key={idx}
-						className="group flex w-full flex-initial flex-col gap-6 rounded-xl px-8 py-16 shadow-xl ring-1 ring-indigo-100 hover:bg-indigo-500 hover:text-white md:w-5/12 lg:flex-1"
+						className="group flex w-full flex-initial flex-col gap-6 rounded-xl px-8 py-16 shadow-xl ring-1 ring-indigo-100 transition duration-300 ease-in-out hover:bg-indigo-500 hover:text-white md:w-5/12 lg:flex-1"
 					>
 						<h3 className="underlined mb-4 w-max self-center text-2xl">
 							{item.product}

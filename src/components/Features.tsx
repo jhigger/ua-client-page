@@ -55,7 +55,7 @@ const Features = () => {
 				return (
 					<div
 						key={idx}
-						className="col-span-full flex flex-col gap-6 rounded-3xl px-8 py-16 ring-indigo-500 hover:shadow-2xl hover:ring-1 md:col-span-6 lg:col-span-3"
+						className="col-span-full flex flex-col gap-6 rounded-3xl px-8 py-16 ring-indigo-500 transition duration-300 ease-in-out hover:shadow-2xl hover:ring-1 md:col-span-6 lg:col-span-3"
 					>
 						<img
 							src={feature.image}
