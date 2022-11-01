@@ -60,12 +60,12 @@ const List = () => {
 	];
 
 	return (
-		<ul className="w-max">
+		<ul className="w-full">
 			{list.map((obj) => {
 				return (
-					<li className="mb-8" key={obj.name}>
+					<li className="mb-8 flex items-center gap-4" key={obj.name}>
 						<span
-							className={`mr-4 inline-flex h-4 w-4 items-center justify-center rounded-full ${obj.color} text-white`}
+							className={`inline-flex h-4 w-4 items-center justify-center rounded-full p-1 ${obj.color} text-white`}
 						>
 							&#10004;
 						</span>
