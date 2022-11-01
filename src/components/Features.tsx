@@ -6,28 +6,28 @@ const Features = () => {
 			name: "Engagement Bot",
 			description:
 				"Engage to earn, raid to earn twitter integration, item store, bank system, community quests, games, events, and future updates.",
-			link: "#",
+			link: "#pricing",
 		},
 		{
 			image: "/assets/images/utilityape.png",
 			name: "Security Bot",
 			description:
 				"Pin verification system, OTP for high risk staff activities, bot kicker for spammers/scammers, customizable unverified user kicker and future updates.",
-			link: "#",
+			link: "#pricing",
 		},
 		{
 			image: "/assets/images/utilityape.png",
 			name: "NFT Tools",
 			description:
 				"NFT floor price tracker, whitelist submission tools, NFT listings, NFT sales, token price tracking, holder verification, and more.",
-			link: "#",
+			link: "#pricing",
 		},
 		{
 			image: "/assets/images/utilityape.png",
 			name: "Enterprise License",
 			description:
 				"Included engagement bot, security bot, NFT tools, and fully customizable additional bot features with mod support on bot support.",
-			link: "#",
+			link: "#pricing",
 		},
 	];
 

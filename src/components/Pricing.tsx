@@ -25,6 +25,7 @@ const Products = () => {
 				"$99/month for servers with 5k – 10k members",
 				"$149/month for servers with >10k members + $48 for every additional 10k members.",
 			],
+			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 		{
 			product: "Security Bot",
@@ -34,6 +35,7 @@ const Products = () => {
 				"$29/month for servers with 5k – 10k members",
 				"$39/month for servers with >10k members + $48.00 for every additional 10k members.",
 			],
+			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 		{
 			product: "NFT Toolbox",
@@ -45,11 +47,12 @@ const Products = () => {
 				"Token price tracking",
 				"Holder Verification",
 			],
+			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 	];
 
 	return (
-		<ul className="col-span-full flex flex-wrap justify-center gap-8">
+		<ul className="col-span-full flex flex-wrap justify-center gap-8" id='pricing'>
 			{products.map((item, idx) => {
 				return (
 					<li
@@ -75,7 +78,13 @@ const Products = () => {
 							);
 						})}
 						<button className="mt-auto w-max self-center rounded bg-indigo-500 py-4 px-6 text-white group-hover:bg-indigo-400">
-							Get Started
+							<a
+								href={item.link}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Get Started
+							</a>
 						</button>
 					</li>
 				);
