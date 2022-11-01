@@ -10,7 +10,10 @@ const Hero = () => {
 					</span>
 				</div>
 				<h2 className="mb-9 text-4xl leading-relaxed">
-					Get Leading Engage-To-Earn and Social Web3 Tools
+					Get Leading Engage-To-Earn and Social Web3{" "}
+					<span className="underlined inline-block w-max leading-none">
+						Tools
+					</span>
 				</h2>
 				<p className="text-lg text-gray-500">
 					Increase Discord growth by 10x.
