@@ -5,7 +5,7 @@ const Features = () => {
 			image: "/assets/images/utilityape.png",
 			name: "Engagement Bot",
 			description:
-				"Engage to earn, raid to earn twitter integration, item store, bank system, community quests, games, events, and future updates.",
+				"Engage to earn, raid to earn twitter integration, item store, bank system, community quests, games, events, raffle system, and  future updates.",
 			link: "#pricing",
 		},
 		{
@@ -48,7 +48,7 @@ const Features = () => {
 				<p className="rounded-3xl bg-gray-50 p-10 text-gray-500 ring-1 ring-gray-500">
 					Set up our bot in less than 10 min after receiving twitter
 					API. An average of <b>10x increase</b> in engagement and
-					community size, with a 3 week free trial – no obligations.
+					community size, with a 2 week free trial – no obligations.
 				</p>
 			</div>
 			{features.map((feature, idx) => {
