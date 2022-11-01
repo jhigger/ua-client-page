@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import How from "../components/How";
 import Navbar from "../components/Navbar";
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
 					<Pricing />
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 };
