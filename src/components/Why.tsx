@@ -32,28 +32,28 @@ const Tabs = () => {
 		{
 			name: "Engage-To-Earn",
 			contents: [
-				"1. Allows users to easily like, RT, comment, and tweet easily to get rewarded",
-				"2. Bank system allows you to reward your holders/certain roles based on % earnedEffortless maintenance",
-				"3. Fully customizable engage system, can add or remove features such as games and coin flips",
-				"4. Additional features always added, most recent is comment attack and raffle system integrated with the feature",
+				"Allows users to easily like, RT, comment, and tweet easily to get rewarded",
+				"Bank system allows you to reward your holders/certain roles based on % earnedEffortless maintenance",
+				"Fully customizable engage system, can add or remove features such as games and coin flips",
+				"Additional features always added, most recent is comment attack and raffle system integrated with the feature",
 			],
 		},
 		{
 			name: "Security Tools",
 			contents: [
-				"1. Allows you to keep your server safe with a simple verification system that can't be bypassed by bots",
-				"2. For sections such as announcements, OTC requirements to avoid hacks",
-				"3. Kick bots and spammers with a click of a button using our bot kicker, customizable",
-				"4. Additional security features implemented to keep servers safe",
+				"Allows you to keep your server safe with a simple verification system that can't be bypassed by bots",
+				"For sections such as announcements, OTC requirements to avoid hacks",
+				"Kick bots and spammers with a click of a button using our bot kicker, customizable",
+				"Additional security features implemented to keep servers safe",
 			],
 		},
 		{
 			name: "NFT Tools",
 			contents: [
-				"1.  Price tracker, NFT listings, sales, and traditional trackers",
-				"2. Holder verification system customizable",
-				"3. Whitelist submission tool",
-				"4. Additional implementational for NFT tools as clients request",
+				"Price tracker, NFT listings, sales, and traditional trackers",
+				"Holder verification system customizable",
+				"Whitelist submission tool",
+				"Additional implementational for NFT tools as clients request",
 			],
 		},
 	];
