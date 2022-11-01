@@ -18,9 +18,8 @@ const Hero = () => {
 				<p className="text-lg text-gray-500">
 					Increase Discord growth by 10x.
 					<br />
-					100% managed via Discord with <b>no Web2</b>
-					<br />
-					applications needed, the first ever.
+					Fully manageable on Discord, <br />
+					<b>no web2 applications required.</b>
 				</p>
 			</div>
 			<div className="col-span-full md:col-span-4">
