@@ -39,7 +39,11 @@ const How = () => {
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					Apply in 15 seconds
 					<br />
-					and get started today!
+					and get started{" "}
+					<span className="underlined inline-block w-max leading-none">
+						today
+					</span>
+					!
 				</h2>
 				<List />
 			</div>

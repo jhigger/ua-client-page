@@ -13,7 +13,11 @@ const Question = () => {
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					Have any question
 					<br />
-					regarding our tools?
+					regarding our{" "}
+					<span className="underlined inline-block w-max leading-none">
+						tools
+					</span>
+					?
 				</h2>
 				<p className="mb-5">
 					Create an application via <i>Start Free Trial</i>, or join

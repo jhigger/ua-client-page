@@ -7,7 +7,11 @@ const Pricing = () => {
 					<span className="">and Grow!</span>
 				</div>
 				<h2 className="mb-9 text-4xl leading-relaxed">
-					See Utility Ape pricing below!
+					See{" "}
+					<span className="underlined inline-block w-max leading-none">
+						Utility Ape
+					</span>{" "}
+					pricing below!
 				</h2>
 			</div>
 			<Products />
