@@ -32,7 +32,7 @@ const Tabs = () => {
 		{
 			name: "Engage-To-Earn",
 			contents: [
-				"Allows users to easily like, RT, comment, and tweet easily to get rewarded",
+				"Allows users to easily like, RT, comment, and tweet to get rewarded",
 				"Bank system allows you to reward your holders/certain roles based on % earnedEffortless maintenance",
 				"Fully customizable engage system, can add or remove features such as games and coin flips",
 				"Additional features always added, most recent is comment attack and raffle system integrated with the feature",
@@ -63,7 +63,7 @@ const Tabs = () => {
 	};
 
 	return (
-		<div className="col-span-full my-8 grid gap-8 lg:col-span-6">
+		<div className="col-span-full grid gap-8 lg:col-span-6">
 			<div className="row-span-1 flex w-full flex-wrap items-center justify-center gap-2">
 				{tabs.map((tab, idx) => {
 					const color =

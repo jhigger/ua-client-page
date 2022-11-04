@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Utility Ape</title>
+				<title>Utility APE | Client</title>
 				<meta
 					name="description"
 					content="Leading Engage-To-Earn and Social Web3 Tools"

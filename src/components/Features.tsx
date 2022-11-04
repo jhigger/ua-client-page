@@ -48,7 +48,7 @@ const Features = () => {
 				<p className="rounded-3xl bg-gray-50 p-10 text-gray-500 ring-1 ring-gray-500">
 					Set up our bot in less than 10 min after receiving twitter
 					API. An average of <b>10x increase</b> in engagement and
-					community size, with a 2 week free trial – no obligations.
+					community size.
 				</p>
 			</div>
 			{features.map((feature, idx) => {

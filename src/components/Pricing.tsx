@@ -13,6 +13,17 @@ const Pricing = () => {
 					</span>{" "}
 					pricing below!
 				</h2>
+				<p className="mx-auto max-w-xl rounded-3xl bg-gray-50 p-4 text-center text-gray-500 ring-1 ring-gray-500">
+					Buy a GEN 1, GEN 2, or Pixel UA to get a Discount.{" "}
+					<a
+						href="https://kairos-ua-holders-page.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-indigo-600 underline"
+					>
+						Learn more
+					</a>
+				</p>
 			</div>
 			<Products />
 		</section>
@@ -24,32 +35,32 @@ const Products = () => {
 		{
 			product: "Engagement Bot",
 			list: [
-				"2 weeks free trial",
-				"$60/month for servers with 1k – 5k members",
-				"$100/month for servers with 5k – 10k members",
-				"$200/month for servers with >10k members + $48 for every additional 10k members.",
+				"$60/mo for servers with less than or equal to 1k members",
+				"$100/mo for servers with more than 1k members",
+				"$200/mo for servers with more than 5k members",
+				"$300/mo for servers with more than 10k members + $100/mo for every additional 10k members.",
 			],
 			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 		{
 			product: "Security Bot",
 			list: [
-				"2 weeks free trial",
-				"$40/month for servers with 1k – 5k members",
-				"$60/month for servers with 5k – 10k members",
-				"$80/month for servers with >10k members + $48 for every additional 10k members.",
+				"$40/mo for servers with less than or equal to 1k members",
+				"$60/mo for servers with more than 1k members",
+				"$80/mo for servers with more than 5k members",
+				"$100/mo for servers with more than 10k members + $40/mo for every additional 10k members.",
 			],
 			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 		{
 			product: "NFT Toolbox",
-			list: ["Add-on to Engagement or Security Bots", "$100/month"],
+			list: ["$100/mo", "Add-on to Engagement or Security Bots"],
 			link: "https://kairos-nextjs-solana.vercel.app/",
 		},
 		{
 			product: "Enterprise",
 			list: [
-				"Starting price is $700/month",
+				"Starting price is $700/mo",
 				"Please contact SALES@UTILITYAPE.COM to discuss a customized solution",
 			],
 			link: "https://kairos-nextjs-solana.vercel.app/",
