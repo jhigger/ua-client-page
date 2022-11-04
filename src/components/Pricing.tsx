@@ -14,7 +14,8 @@ const Pricing = () => {
 					pricing below!
 				</h2>
 				<p className="mx-auto max-w-xl rounded-3xl bg-gray-50 p-4 text-center text-gray-500 ring-1 ring-gray-500">
-					Buy a GEN 1, GEN 2, or Pixel UA to get a Discount.{" "}
+					Buy a GEN 1, GEN 2, or Pixel UA to get a Discount.
+					Collections are self deflationary for both GEN 2 and Pixel.{" "}
 					<a
 						href="https://kairos-ua-holders-page.vercel.app/"
 						target="_blank"
