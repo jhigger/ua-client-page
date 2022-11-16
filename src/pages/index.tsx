@@ -15,11 +15,6 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<title>Utility APE | Client</title>
-				<meta
-					name="description"
-					content="Leading Engage-To-Earn and Social Web3 Tools"
-				/>
-				<link rel="icon" href="assets/images/utilityape.png" />
 			</Head>
 
 			<Navbar />
