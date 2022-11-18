@@ -7,13 +7,13 @@ const Navbar = () => {
 
 	const navigation = [
 		{ title: "UA Home", path: "https://utilityape.com/" },
-		{ title: "Demo", path: "https://demo.utilityape.com/" },
+		{ title: "Demo", path: "https://discord.com/invite/hT3hYvdy" },
 		{ title: "Discord", path: "https://discord.com/invite/utilityape" },
 		{ title: "Twitter", path: "https://twitter.com/utilityapeNFT" },
 	];
 
 	return (
-		<header className="z-50 sticky top-0 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
+		<header className="sticky top-0 z-50 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
 			<nav className="w-full border-b bg-white md:static md:border-0">
 				<div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
 					<div className="flex items-center justify-between py-3 md:block md:py-5">
@@ -78,7 +78,7 @@ const CTA = () => {
 	return (
 		<div className="mb-4 flex md:mb-0 md:inline-block">
 			<a
-				href="https://kairos-nextjs-solana.vercel.app/"
+				href="https://apply.utilityape.com/"
 				target="_blank"
 				rel="noreferrer"
 				className="mx-auto w-full justify-center rounded-md bg-indigo-600 py-3 px-4 text-center text-white shadow hover:bg-indigo-700"
