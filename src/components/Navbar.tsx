@@ -6,10 +6,27 @@ const Navbar = () => {
 	const [state, setState] = useState(false);
 
 	const navigation = [
-		{ title: "UA Home", path: "https://utilityape.com/" },
-		{ title: "Demo", path: "https://discord.com/invite/hT3hYvdy" },
-		{ title: "Discord", path: "https://discord.com/invite/utilityape" },
-		{ title: "Twitter", path: "https://twitter.com/utilityapeNFT" },
+		{ title: "UA Home", path: "https://utilityape.com/", newTab: false },
+		{
+			title: "Holders",
+			path: "https://holders.utilityape.com/",
+			newTab: false,
+		},
+		{
+			title: "Demo",
+			path: "https://discord.com/invite/hT3hYvdy",
+			newTab: true,
+		},
+		{
+			title: "Discord",
+			path: "https://discord.com/invite/utilityape",
+			newTab: true,
+		},
+		{
+			title: "Twitter",
+			path: "https://twitter.com/utilityapeNFT",
+			newTab: true,
+		},
 	];
 
 	return (
@@ -41,7 +58,9 @@ const Navbar = () => {
 									>
 										<a
 											href={item.path}
-											target="_blank"
+											target={
+												item.newTab ? "_blank" : "_self"
+											}
 											rel="noreferrer"
 										>
 											{item.title}
