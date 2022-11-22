@@ -83,14 +83,14 @@ const List = () => {
 								className={`absolute h-12 rotate-45 place-self-center rounded-full py-8 px-5 ring-1 ${item.color}`}
 							></div>
 							<div
-								className={`absolute place-self-center ${item.color}`}
+								className={`absolute place-self-center text-2xl font-bold ${item.color}`}
 							>
 								{idx + 1}
 							</div>
 						</span>
 						<div className="rounded-xl p-8 pl-12 ring-gray-200 hover:ring-1">
 							<h3 className="mb-4 text-2xl">{item.heading}</h3>
-							<p className="text-gray-500">{item.content}</p>
+							<p className="text-gray-400">{item.content}</p>
 						</div>
 					</li>
 				);

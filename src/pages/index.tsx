@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Navbar />
-			<main className="min-h-screen py-4">
+			<main className="bg-gray-900 text-white min-h-screen py-4">
 				<div className="container mx-auto px-4">
 					<Hero />
 					<Features />

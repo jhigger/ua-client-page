@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const Question = () => {
 	return (
-		<section className="mt-20 grid grid-cols-1 gap-4 rounded-3xl bg-indigo-50 py-16 px-4 font-inter md:grid-cols-12 lg:px-0">
+		<section className="my-20 grid grid-cols-1 gap-4 rounded-3xl bg-indigo-50 py-16 px-4 font-inter md:grid-cols-12 lg:px-0">
 			<div className="col-span-full hidden flex-col justify-center gap-4 lg:col-span-3 lg:flex">
 				<img
 					src="assets/svg/investor_update.svg"
@@ -9,7 +9,7 @@ const Question = () => {
 					className="w-full"
 				/>
 			</div>
-			<div className="col-span-full text-center lg:col-span-6">
+			<div className="col-span-full text-center lg:col-span-6 text-black">
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					Have any question
 					<br />

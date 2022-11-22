@@ -1,43 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
 
 	const navigation = [
-		{ title: "UA Home", path: "https://utilityape.com/", newTab: false },
-		{
-			title: "Holders",
-			path: "https://holders.utilityape.com/",
-			newTab: false,
-		},
-		{
-			title: "Demo",
-			path: "https://discord.com/invite/hT3hYvdy",
-			newTab: true,
-		},
-		{
-			title: "Discord",
-			path: "https://discord.com/invite/utilityape",
-			newTab: true,
-		},
-		{
-			title: "Twitter",
-			path: "https://twitter.com/utilityapeNFT",
-			newTab: true,
-		},
+		{ name: "Client", link: "http://client.utilityape.com/" },
+		{ name: "Holders", link: "https://holders.utilityape.com/" },
+		{ name: "Mutate", link: "https://mutate.utilityape.com/" },
+		{ name: "Raid", link: "https://pay-to-raid.utilityape.com/" },
+		{ name: "Dashboard", link: "http://dashboard.utilityape.com/" },
 	];
 
 	return (
 		<header className="sticky top-0 z-50 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
-			<nav className="w-full border-b bg-white md:static md:border-0">
+			<nav className="w-full border-b bg-gray-900 md:static md:border-0">
 				<div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
 					<div className="flex items-center justify-between py-3 md:block md:py-5">
 						<Logo />
 						<div className="md:hidden">
 							<button
-								className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
+								className="rounded-md p-2 text-gray-200 outline-none focus:border focus:border-gray-600"
 								onClick={() => setState(!state)}
 							>
 								{state ? <CloseIcon /> : <MenuIcon />}
@@ -45,32 +28,25 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div
-						className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
+						className={`mt-8 flex-1 pb-3 md:mt-0 md:block md:pb-0 ${
 							state ? "block" : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-center gap-4 space-y-8 font-semibold md:flex md:space-x-6 md:space-y-0">
+						<ul className="items-center justify-end gap-4 space-y-8 font-semibold md:flex md:space-x-6 md:space-y-0">
 							{navigation.map((item, idx) => {
 								return (
 									<li
 										key={idx}
-										className="text-gray-600 hover:text-indigo-600"
+										className="text-white hover:text-indigo-300"
 									>
-										<a
-											href={item.path}
-											target={
-												item.newTab ? "_blank" : "_self"
-											}
-											rel="noreferrer"
-										>
-											{item.title}
+										<a href={item.link} rel="noreferrer">
+											{item.name}
 										</a>
 									</li>
 								);
 							})}
 						</ul>
 					</div>
-					<CTA />
 				</div>
 			</nav>
 		</header>
@@ -79,32 +55,14 @@ const Navbar = () => {
 
 const Logo = () => {
 	return (
-		<Link href="/">
-			<a>
-				<img
-					src="/assets/images/logo.png"
-					width={120}
-					height={50}
-					alt="Utility Ape logo"
-					className="invert"
-				/>
-			</a>
-		</Link>
-	);
-};
-
-const CTA = () => {
-	return (
-		<div className="mb-4 flex md:mb-0 md:inline-block">
-			<a
-				href="https://apply.utilityape.com/"
-				target="_blank"
-				rel="noreferrer"
-				className="mx-auto w-full justify-center rounded-md bg-indigo-600 py-3 px-4 text-center text-white shadow hover:bg-indigo-700"
-			>
-				Start Free Trial
-			</a>
-		</div>
+		<a href="https://utilityape.com/" rel="noreferrer">
+			<img
+				src="/assets/images/logo.png"
+				width={120}
+				height={50}
+				alt="Utility Ape logo"
+			/>
+		</a>
 	);
 };
 

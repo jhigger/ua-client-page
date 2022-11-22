@@ -15,7 +15,7 @@ const Why = () => {
 						Trippin Apes.
 					</span>
 				</h2>
-				<p className="text-gray-500">
+				<p className="text-gray-400">
 					We have onboarded one of best projects in the price
 					including Infected Mob, Trippin Ape Tribe, Primates,
 					Psycatz, Busy Boarz, and more!

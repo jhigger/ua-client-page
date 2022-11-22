@@ -15,7 +15,7 @@ const Hero = () => {
 						Tools
 					</span>
 				</h2>
-				<p className="text-lg text-gray-500">
+				<p className="text-lg text-gray-400">
 					Increase Discord growth by 10x.
 					<br />
 					Fully manageable on Discord, <br />
@@ -86,9 +86,9 @@ const Card = ({
 	text: string;
 }) => {
 	return (
-		<div className="w-max rounded-md bg-white p-5 shadow-lg ring-1 ring-gray-200 first:place-self-end">
+		<div className="w-max rounded-md bg-gray-50 p-5 shadow-lg ring-1 ring-gray-200 first:place-self-end">
 			<div className={`mb-2 text-4xl ${headingColor}`}>{heading}</div>
-			<div>{text}</div>
+			<div className="text-black">{text}</div>
 		</div>
 	);
 };

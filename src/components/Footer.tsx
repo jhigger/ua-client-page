@@ -14,7 +14,7 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="max-w-screen mt-32 border-t-2 border-gray-200 bg-white px-4 py-5 text-gray-500 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
+		<footer className="max-w-screen border-t-2 border-gray-200 bg-gray-900 px-4 py-5 text-gray-50 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
 			<div className="container mx-auto">
 				<div className="mx-auto -mt-14 max-w-max rounded bg-white py-4 px-8 ring-1 ring-gray-200">
 					<img

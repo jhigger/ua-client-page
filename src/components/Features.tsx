@@ -45,7 +45,7 @@ const Features = () => {
 				</h2>
 			</div>
 			<div className="col-span-full md:col-span-10 md:col-start-2 lg:col-span-6 2xl:col-span-5">
-				<p className="rounded-3xl bg-gray-50 p-10 text-gray-500 ring-1 ring-gray-500">
+				<p className="rounded-3xl bg-gray-800 p-10 text-gray-400 ring-1 ring-gray-500">
 					Set up our bot in less than 10 min after receiving twitter
 					API. An average of <b>10x increase</b> in engagement and
 					community size.
@@ -66,7 +66,7 @@ const Features = () => {
 						<h3 className="underlined w-max text-xl">
 							{feature.name}
 						</h3>
-						<p className="text-gray-500">{feature.description}</p>
+						<p className="text-gray-400">{feature.description}</p>
 						<a href={feature.link} className="mt-auto">
 							Explore more &#129109;
 						</a>
