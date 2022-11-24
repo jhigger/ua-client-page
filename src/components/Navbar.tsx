@@ -1,68 +1,127 @@
-/* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
 
-	const navigation = [
-		{ name: "Client", link: "http://client.utilityape.com/" },
-		{ name: "Holders", link: "https://holders.utilityape.com/" },
-		{ name: "Mutate", link: "https://mutate.utilityape.com/" },
-		{ name: "Raid", link: "https://pay-to-raid.utilityape.com/" },
-		{ name: "Dashboard", link: "http://dashboard.utilityape.com/" },
+	const links = [
+		{ text: "Client", href: "http://client.utilityape.com/" },
+		{ text: "Holders", href: "https://holders.utilityape.com/" },
+		{ text: "Mutate", href: "https://mutate.utilityape.com/" },
+		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
+		{ text: "Dashboard", href: "http://dashboard.utilityape.com/" },
 	];
 
-	return (
-		<header className="sticky top-0 z-50 border-b-[1px] border-gray-200 drop-shadow-[0_0_60px_rgba(0,0,0,7%)]">
-			<nav className="w-full border-b bg-gray-900 md:static md:border-0">
-				<div className="mx-auto max-w-screen-xl items-center px-4 md:flex md:px-8">
-					<div className="flex items-center justify-between py-3 md:block md:py-5">
-						<Logo />
-						<div className="md:hidden">
-							<button
-								className="rounded-md p-2 text-gray-200 outline-none focus:border focus:border-gray-600"
-								onClick={() => setState(!state)}
-							>
-								{state ? <CloseIcon /> : <MenuIcon />}
-							</button>
-						</div>
-					</div>
-					<div
-						className={`mt-8 flex-1 pb-3 md:mt-0 md:block md:pb-0 ${
-							state ? "block" : "hidden"
-						}`}
-					>
-						<ul className="items-center justify-end gap-4 space-y-8 font-semibold md:flex md:space-x-6 md:space-y-0">
-							{navigation.map((item, idx) => {
-								return (
-									<li
-										key={idx}
-										className="text-white hover:text-indigo-300"
-									>
-										<a href={item.link} rel="noreferrer">
-											{item.name}
-										</a>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-	);
-};
+	useEffect(() => {
+		let scrollpos = window.scrollY;
+		const header = document.getElementById("header");
+		const navcontent = document.getElementById("nav-content");
+		const navaction = document.getElementById("navAction");
+		const toToggle = document.querySelectorAll(".toggleColour");
 
-const Logo = () => {
+		const dark = () => {
+			header?.classList.add("bg-gray-900");
+			navaction?.classList.remove("bg-white");
+			navaction?.classList.add("gradient");
+			navaction?.classList.remove("text-white");
+			navaction?.classList.add("text-white");
+			//Use to switch toggleColour colours
+			for (let i = 0; i < toToggle.length; i++) {
+				toToggle[i]?.classList.remove("text-white");
+				toToggle[i]?.classList.add("text-white");
+			}
+			header?.classList.add("shadow");
+			navcontent?.classList.remove("bg-gray-100");
+			navcontent?.classList.add("bg-white");
+		};
+
+		const light = () => {
+			navaction?.classList.remove("gradient");
+			navaction?.classList.add("bg-white");
+			navaction?.classList.remove("text-white");
+			navaction?.classList.add("text-white");
+			//Use to switch toggleColour colours
+			for (let i = 0; i < toToggle.length; i++) {
+				toToggle[i]?.classList.remove("text-white");
+				toToggle[i]?.classList.add("text-white");
+			}
+
+			header?.classList.remove("shadow");
+			navcontent?.classList.remove("bg-white");
+			navcontent?.classList.add("bg-gray-100");
+		};
+
+		scrollpos > 20 || state ? dark() : light();
+
+		const handleScroll = () => {
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 20 || state) {
+				dark();
+			} else {
+				light();
+			}
+		};
+
+		document.addEventListener("scroll", handleScroll);
+
+		return () => {
+			document.removeEventListener("scroll", handleScroll);
+		};
+	}, [state]);
+
 	return (
-		<a href="https://utilityape.com/" rel="noreferrer">
-			<img
-				src="/assets/images/logo.png"
-				width={120}
-				height={50}
-				alt="Utility Ape logo"
-			/>
-		</a>
+		<nav
+			id="header"
+			className="font-inter sticky top-0 z-50 w-full bg-gray-900 text-white transition duration-300 ease-in-out"
+		>
+			<div className="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between p-4">
+				<a href="https://utilityape.com/">
+					<div className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl">
+						<Image
+							priority
+							loading="eager"
+							src="/assets/images/utilityape.png"
+							alt="icon"
+							width={32}
+							height={32}
+						/>
+						Utility APE
+					</div>
+				</a>
+				<div className="block pr-4 lg:hidden">
+					<button
+						id="nav-toggle"
+						className="focus:shadow-outline flex transform items-center p-1 text-white transition duration-300 ease-in-out hover:scale-105 hover:text-gray-900 focus:outline-none"
+						onClick={() => setState(!state)}
+					>
+						{state ? <CloseIcon /> : <MenuIcon />}
+					</button>
+				</div>
+				<div
+					className={`z-20 mt-8 w-full flex-grow p-4 lg:mt-0 lg:flex lg:w-auto lg:items-center lg:bg-transparent lg:p-0 ${
+						state ? "block" : "hidden"
+					}`}
+				>
+					<ul className="flex-1 flex-wrap items-center justify-end md:flex">
+						{links.map((link, idx) => {
+							return (
+								<li key={idx} className="mr-2">
+									<a
+										className="toggleColour inline-block py-2 px-4 text-base font-bold text-white no-underline"
+										href={link.href}
+									>
+										{link.text}
+									</a>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</div>
+			<hr className="my-0 border-b border-gray-100 py-0 opacity-25" />
+		</nav>
 	);
 };
 
