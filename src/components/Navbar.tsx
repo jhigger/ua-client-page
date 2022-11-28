@@ -84,8 +84,8 @@ const Navbar = () => {
 							loading="eager"
 							src="/assets/images/utilityape.png"
 							alt="icon"
-							width={32}
-							height={32}
+							width={64}
+							height={64}
 						/>
 						Utility APE
 					</div>
