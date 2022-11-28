@@ -16,9 +16,9 @@ const Why = () => {
 					</span>
 				</h2>
 				<p className="text-gray-400">
-					We have onboarded one of best projects in the price
-					including Infected Mob, Trippin Ape Tribe, Primates,
-					Psycatz, Busy Boarz, and more!
+					We have onboarded many of the top projects including
+					Infected Mob, Trippin Ape Tribe, Primates, PsyCatz, Busy
+					Boars, and many more.
 				</p>
 			</div>
 			<Tabs />
@@ -32,28 +32,28 @@ const Tabs = () => {
 		{
 			name: "Engage-To-Earn",
 			contents: [
-				"Allows users to easily like, RT, comment, and tweet to get rewarded",
-				"Bank system allows you to reward your holders/certain roles based on % earnedEffortless maintenance",
-				"Fully customizable engage system, can add or remove features such as games and coin flips",
-				"Additional features always added, most recent is comment attack and raffle system integrated with the feature",
+				"Allows users to easily like, RT, comment, and tweet to get rewarded.",
+				"Banking system allows you to reward your community based on their role within the server. Admins may choose 'claiming rate' percentage for different roles.",
+				"Fully customizable engage-to-earn system which features quests, games, raffles, looting, and many other tools to promote activity and engagement.",
+				"Additional features always added, most recent is comment attack and raffle system integrated with the feature.",
 			],
 		},
 		{
 			name: "Security Tools",
 			contents: [
-				"Allows you to keep your server safe with a simple verification system that can't be bypassed by bots",
-				"For sections such as announcements, OTC requirements to avoid hacks",
-				"Kick bots and spammers with a click of a button using our bot kicker, customizable",
-				"Additional security features implemented to keep servers safe",
+				"Allows you to keep your server safe with a simple verification system that can't be bypassed by bots.",
+				"For sections such as announcements, OTC requirements to avoid hacks.",
+				"Kick bots and spammers with a click of a button using our bot kicker, customizable.",
+				"Additional security features implemented to keep servers safe.",
 			],
 		},
 		{
 			name: "NFT Tools",
 			contents: [
-				"Price tracker, NFT listings, sales, and traditional trackers",
-				"Holder verification system customizable",
-				"Whitelist submission tool",
-				"Additional implementational for NFT tools as clients request",
+				"Price tracker, NFT listings, sales, and traditional trackers.",
+				"Holder verification system customizable.",
+				"Whitelist submission tool.",
+				"Additional implementational for NFT tools as clients request.",
 			],
 		},
 	];

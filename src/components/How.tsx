@@ -57,7 +57,7 @@ const List = () => {
 			color: "bg-orange-50 ring-orange-200 text-orange-500",
 			heading: "Connect your wallet and submit an application",
 			content:
-				"Log in via your wallet to submit an applications, once submitted you will get approved/denied within 24 hours. If there is an error in your answers we will ask you to resubmit the application with the correct information.",
+				"Log in via your wallet to submit an application to use the UA Tools, once approved you will receive an invoice and your bot link within 24 hours after the payment has been completed.",
 		},
 		{
 			color: "bg-green-50 ring-green-200 text-green-500",
