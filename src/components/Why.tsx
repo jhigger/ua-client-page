@@ -35,7 +35,7 @@ const Tabs = () => {
 				"Allows users to easily like, RT, comment, and tweet to get rewarded.",
 				"Banking system allows you to reward your community based on their role within the server. Admins may choose 'claiming rate' percentage for different roles.",
 				"Fully customizable engage-to-earn system which features quests, games, raffles, looting, and many other tools to promote activity and engagement.",
-				"Additional features always added, most recent is comment attack and raffle system integrated with the feature.",
+				"Additional features such as comment attack and raffle system constantly being added.",
 			],
 		},
 		{

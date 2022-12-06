@@ -18,8 +18,9 @@ const Hero = () => {
 				<p className="text-lg text-gray-400">
 					Increase Discord growth by 10x.
 					<br />
-					Fully manageable on Discord, <br />
-					<b>no web2 applications required.</b>
+					Fully manageable on Discord.
+					<br />
+					<b>No Web2 application required.</b>
 				</p>
 				<DemoButton />
 			</div>
@@ -36,7 +37,7 @@ const Hero = () => {
 				<Card
 					headingColor="text-orange-500"
 					heading="135"
-					text="Estimated clients"
+					text="Over 125 Clients"
 				/>
 			</div>
 		</section>

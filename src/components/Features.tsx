@@ -5,7 +5,7 @@ const Features = () => {
 			image: "/assets/images/utilityape.png",
 			name: "Engagement Bot",
 			description:
-				"Engage to earn, raid to earn twitter integration, item store, bank system, community quests, games, events, raffle system, and  future updates.",
+				"Engage-to-earn, raid-to-earn Twitter integration, item store, bank system, community quests, games, events, raffle system, and future updates.",
 			link: "#pricing",
 		},
 		{
@@ -41,7 +41,7 @@ const Features = () => {
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					Over 100 clients in less
 					<br />
-					than 2 months of releasing.
+					than 2 months.
 				</h2>
 			</div>
 			<div className="col-span-full md:col-span-10 md:col-start-2 lg:col-span-6 2xl:col-span-5">

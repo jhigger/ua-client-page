@@ -57,19 +57,19 @@ const List = () => {
 			color: "bg-orange-50 ring-orange-200 text-orange-500",
 			heading: "Connect your wallet and submit an application",
 			content:
-				"Log in via your wallet to submit an application to use the UA Tools, once approved you will receive an invoice and your bot link within 24 hours after the payment has been completed.",
+				"Log in via your wallet to submit an application. You will receive an invoice within 24 hours of your application being approved and your payment being processed.",
 		},
 		{
 			color: "bg-green-50 ring-green-200 text-green-500",
 			heading: "Get a personalized bot invite link",
 			content:
-				"When your application is approved, you will be given a Discord bot invite link that is customized for your server. You can setup all of the bot except the Twitter Raid features which requires the Twitter API 'elevated' access application. The process of applying for the Twitter API can take up to 72 hours.",
+				"After you application is approved you will be given a Discord bot invite link that is customizable for your server. You can set up all of the bot except the Twitter Raid feature which required the Twitter API “elevated” access application. The process of applying for the Twitter API can take up to 72 hours.",
 		},
 		{
 			color: "bg-indigo-50 ring-indigo-200 text-indigo-500",
 			heading: "Start setting up the Discord bot",
 			content:
-				"After the bot has been invited to your server you can follow our getting started documentation here. Additionally, we have a built-in quick setup command that will get you started.",
+				"Once the bot is on your server, use our “Getting Started” documentation to customize the bot for your server or use our built-in quick setup command to get started right away.",
 		},
 	];
 

@@ -12,10 +12,9 @@ const Raid = () => {
 				</h2>
 				<p className="leading-loose text-gray-600">
 					Twitter API integration makes it easy for users to get
-					rewarded
+					rewarded for Twitter engagement.
 					<br />
-					for Twitter engagement Increases twitter engagement by over{" "}
-					<b>30x</b>
+					Increases Twitter engagement by over <b>30x</b>
 				</p>
 				<a href="https://pay-to-raid.utilityape.com/" rel="noreferrer">
 					<button className="my-8 mx-auto w-full max-w-xl transform rounded-full bg-black py-3 px-6 text-xl font-bold text-white shadow transition duration-75 ease-in-out hover:bg-white hover:text-black active:scale-75 lg:mx-0">
