@@ -53,7 +53,7 @@ const Tabs = () => {
 				"Price tracker, NFT listings, sales, and traditional trackers.",
 				"Holder verification system customizable.",
 				"Whitelist submission tool.",
-				"Additional implementational for NFT tools as clients request.",
+				"Additional implementations for NFT tools as clients request.",
 			],
 		},
 	];

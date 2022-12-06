@@ -84,7 +84,7 @@ const Products = () => {
 							return (
 								<div
 									key={text}
-									className="flex items-center gap-4 self-center md:self-start"
+									className="flex items-center gap-4 self-start"
 								>
 									<span className="text-green-300">
 										&#10004;
