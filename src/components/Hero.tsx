@@ -21,6 +21,7 @@ const Hero = () => {
 					Fully manageable on Discord, <br />
 					<b>no web2 applications required.</b>
 				</p>
+				<DemoButton />
 			</div>
 			<div className="col-span-full md:col-span-4">
 				<img src="/assets/images/phone.png" alt="phone" />
@@ -90,6 +91,20 @@ const Card = ({
 			<div className={`mb-2 text-4xl ${headingColor}`}>{heading}</div>
 			<div className="text-black">{text}</div>
 		</div>
+	);
+};
+
+const DemoButton = () => {
+	return (
+		<a
+			href="https://discord.gg/HRB2Cmdtcc"
+			target="_blank"
+			rel="noreferrer"
+		>
+			<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-75 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white active:scale-75 lg:mx-0">
+				Demo
+			</button>
+		</a>
 	);
 };
 
