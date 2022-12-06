@@ -26,7 +26,7 @@ const Features = () => {
 			image: "/assets/images/utilityape.png",
 			name: "Enterprise License",
 			description:
-				"Included engagement bot, security bot, NFT tools, and fully customizable additional bot features with mod support on bot support.",
+				"Includes Engagement Bot, Security Bot, NFT Tools and all are fully customizable. Clients may also request additional features, use API access, and remove any UA branding. All our plans are paired with our incredible support team that will assist with any questions, requests, mod or bot support.",
 			link: "#pricing",
 		},
 	];
@@ -46,9 +46,8 @@ const Features = () => {
 			</div>
 			<div className="col-span-full md:col-span-10 md:col-start-2 lg:col-span-6 2xl:col-span-5">
 				<p className="rounded-3xl bg-gray-800 p-10 text-gray-400 ring-1 ring-gray-500">
-					Set up our bot in less than 10 min after receiving twitter
-					API. An average of <b>10x increase</b> in engagement and
-					community size.
+					Set up our bot in less than 10 min. An average of{" "}
+					<b>10x increase</b> in engagement and community size.
 				</p>
 			</div>
 			{features.map((feature, idx) => {

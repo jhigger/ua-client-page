@@ -69,7 +69,7 @@ const List = () => {
 			color: "bg-indigo-50 ring-indigo-200 text-indigo-500",
 			heading: "Start setting up the Discord bot",
 			content:
-				"After the bot has been invited to your server you can follow our getting started documentation here. Additionally we have a built-in quick setup command that will get you started.",
+				"After the bot has been invited to your server you can follow our getting started documentation here. Additionally, we have a built-in quick setup command that will get you started.",
 		},
 	];
 

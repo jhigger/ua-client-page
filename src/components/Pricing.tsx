@@ -15,7 +15,7 @@ const Pricing = () => {
 				</h2>
 				<p className="mx-auto max-w-xl rounded-3xl bg-gray-800 p-4 text-center text-gray-400 ring-1 ring-gray-500">
 					Buy a GEN 1, GEN 2, or Pixel UA to get a Discount.
-					Collections are self deflationary for both GEN 2 and Pixel.{" "}
+					Collections are self-deflationary for both GEN 2 and Pixel.{" "}
 					<a
 						href="https://holders.utilityape.com/"
 						target="_blank"
@@ -46,10 +46,8 @@ const Products = () => {
 		{
 			product: "Security Bot",
 			list: [
-				"$40/mo for servers with less than or equal to 1k members",
-				"$60/mo for servers with more than 1k members",
-				"$80/mo for servers with more than 5k members",
-				"$100/mo for servers with more than 10k members + $40/mo for every additional 10k members.",
+				"Free for Engagement bot clients",
+				"Standalone pricing: $40/mo for any server size",
 			],
 			link: "https://kairos-nextjs-solana.vercel.app/",
 		},

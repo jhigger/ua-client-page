@@ -9,7 +9,7 @@ const Question = () => {
 					className="w-full"
 				/>
 			</div>
-			<div className="col-span-full text-center lg:col-span-6 text-black">
+			<div className="col-span-full text-center text-black lg:col-span-6">
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					Have any question
 					<br />
@@ -20,8 +20,8 @@ const Question = () => {
 					?
 				</h2>
 				<p className="mb-5">
-					Create an application via <i>Start Free Trial</i>, or join
-					our discord server to reach out!
+					Email us or create a ticket on our discord server for
+					immediate support!
 				</p>
 				<button className="rounded-full bg-indigo-600 px-5 py-3 text-white shadow-md outline-none ring-indigo-600 ring-offset-2 hover:bg-indigo-500 focus:shadow-none focus:ring-2 active:bg-indigo-700 sm:mt-0 sm:ml-3">
 					<a

@@ -10,7 +10,7 @@ const Why = () => {
 				</div>
 				<h2 className="mb-9 text-4xl leading-relaxed">
 					We have the most competitive prices with reputable feedback
-					from well known projects such as{" "}
+					from well-known projects such as{" "}
 					<span className="underlined inline-block w-max font-bold leading-none">
 						Trippin Apes.
 					</span>
