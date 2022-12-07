@@ -13,7 +13,15 @@ const Navbar = () => {
 		{ text: "Client Dashboard", href: "http://dashboard.utilityape.com/" },
 	];
 
-	const dropDownItems = [{ label: "Coming soon!" }];
+	const dropDownItems = [
+		{
+			label: "Sniper Tools",
+			link: "https://utilityape.soltools.xyz/",
+		},
+		{
+			label: "Coming soon!",
+		},
+	];
 
 	useEffect(() => {
 		let scrollpos = window.scrollY;
