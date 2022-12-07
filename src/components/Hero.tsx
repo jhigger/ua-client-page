@@ -36,7 +36,7 @@ const Hero = () => {
 				<List />
 				<Card
 					headingColor="text-orange-500"
-					heading="135"
+					heading=""
 					text="Over 125 Clients"
 				/>
 			</div>
