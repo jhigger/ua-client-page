@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+
 const Raid = () => {
 	return (
 		<section className="mt-20 grid grid-cols-1 font-inter text-black md:grid-cols-12">
@@ -22,8 +24,25 @@ const Raid = () => {
 					</button>
 				</a>
 			</div>
-			<div className="col-span-full w-full bg-indigo-500 pt-4  pr-4  ring-1 ring-indigo-500 lg:col-span-6">
-				<img src="assets/svg/tweetstorm.svg" alt="illustration" />
+			<div className="col-span-full w-full bg-indigo-500 pt-4 ring-1 ring-indigo-500 lg:col-span-6">
+				{/* <img src="assets/svg/tweetstorm.svg" alt="illustration" /> */}
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight text-white lg:text-5xl">
+					Pay To Raid
+				</h2>
+				<p className="my-2 w-full text-center text-2xl leading-tight text-white">
+					See Previous Raids
+				</p>
+				<div className="flex w-full flex-col items-center justify-center py-4">
+					<div className="w-full text-center md:max-w-xl">
+						<TwitterTimelineEmbed
+							sourceType="profile"
+							screenName="ApeUtilityRaid"
+							options={{ height: 500 }}
+							placeholder="Loading..."
+							userId={"1559396748677619713"}
+						/>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
