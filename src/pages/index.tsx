@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 import Pricing from "../components/Pricing";
 import Question from "../components/Question";
 import Raid from "../components/Raid";
+import Testimonials from "../components/Testimonials";
 import Why from "../components/Why";
 
 const Home: NextPage = () => {
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Navbar />
-			<main className="bg-gray-900 text-white min-h-screen py-4">
+			<main className="min-h-screen bg-gray-900 py-4 text-white">
 				<div className="container mx-auto px-4">
 					<Hero />
 					<Features />
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
 				</div>
 				<How />
 				<div className="container mx-auto px-4">
+					<Testimonials />
 					<Raid />
 					<Pricing />
 					<Question />
