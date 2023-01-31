@@ -11,8 +11,8 @@ const Navbar = () => {
 		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
 		{ text: "Client Dashboard", href: "http://dashboard.utilityape.com/" },
 		{
-			name: "Coinflip",
-			link: "https://degencoinflip.com/utilityape",
+			text: "Coinflip",
+			href: "https://degencoinflip.com/utilityape",
 		},
 	];
 
