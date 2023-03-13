@@ -8,7 +8,7 @@ const Navbar = () => {
 	const links = [
 		{ text: "Client", href: "http://client.utilityape.com/" },
 		{ text: "Holders", href: "https://holders.utilityape.com/" },
-		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
+		{ text: "Raid", href: "https://discord.com/invite/utilityape" },
 		{ text: "Client Dashboard", href: "http://dashboard.utilityape.com/" },
 		{
 			text: "Coinflip",
