@@ -41,7 +41,7 @@ const Products = () => {
 				"$200/mo for servers with more than 5k members",
 				"$300/mo for servers with more than 10k members + $100/mo for every additional 10k members.",
 			],
-			link: "https://kairos-nextjs-solana.vercel.app/",
+			link: "https://dashboard.utilityape.com/",
 		},
 		{
 			product: "Security Bot",
@@ -49,12 +49,12 @@ const Products = () => {
 				"Free for Engagement bot clients",
 				"Standalone pricing: $40/mo for any server size",
 			],
-			link: "https://kairos-nextjs-solana.vercel.app/",
+			link: "https://dashboard.utilityape.com/",
 		},
 		{
 			product: "NFT Toolbox",
 			list: ["$100/mo", "Add-on to Engagement or Security Bots"],
-			link: "https://kairos-nextjs-solana.vercel.app/",
+			link: "https://dashboard.utilityape.com/",
 		},
 		{
 			product: "Enterprise",
@@ -62,7 +62,7 @@ const Products = () => {
 				"Starting price is $700/mo",
 				"Please contact SALES@UTILITYAPE.COM to discuss a customized solution",
 			],
-			link: "https://kairos-nextjs-solana.vercel.app/",
+			link: "https://dashboard.utilityape.com/",
 		},
 	];
 
