@@ -1,3 +1,5 @@
+import { demoLink } from "../links";
+
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
 	return (
@@ -97,11 +99,7 @@ const Card = ({
 
 const DemoButton = () => {
 	return (
-		<a
-			href="https://discord.gg/HRB2Cmdtcc"
-			target="_blank"
-			rel="noreferrer"
-		>
+		<a href={demoLink} target="_blank" rel="noreferrer">
 			<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-75 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white active:scale-75 lg:mx-0">
 				Demo
 			</button>

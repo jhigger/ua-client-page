@@ -1,39 +1,10 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import DropDownMenu from "./DropDownMenu";
+import { dropDownItems, homeLink, links } from "../links";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
-
-	const links = [
-		{ text: "Client", href: "http://client.utilityape.com/" },
-		{ text: "Holders", href: "https://holders.utilityape.com/" },
-		{ text: "Raid", href: "https://discord.com/invite/utilityape" },
-		{ text: "Client Dashboard", href: "http://dashboard.utilityape.com/" },
-		{
-			text: "Coinflip",
-			href: "https://degencoinflip.com/utilityape",
-		},
-	];
-
-	const dropDownItems = [
-		{
-			label: "Sniper Tools",
-			link: "https://utilityape.soltools.xyz/",
-		},
-		{
-			label: "Staking",
-			link: "https://stake.utilityape.com/",
-		},
-		{
-			label: "Missions",
-			link: "https://missions.utilityape.com/",
-		},
-		{
-			label: "Stats",
-			link: "https://stats.utilityape.com/",
-		},
-	];
 
 	useEffect(() => {
 		let scrollpos = window.scrollY;
@@ -100,7 +71,7 @@ const Navbar = () => {
 			className="sticky top-0 z-50 w-full bg-gray-900 font-inter text-white transition duration-300 ease-in-out"
 		>
 			<div className="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between p-4">
-				<a href="https://utilityape.com/">
+				<a href={homeLink}>
 					<div className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl">
 						<Image
 							priority

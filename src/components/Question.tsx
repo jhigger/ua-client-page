@@ -1,3 +1,5 @@
+import { discordLink } from "../links";
+
 /* eslint-disable @next/next/no-img-element */
 const Question = () => {
 	return (
@@ -25,7 +27,7 @@ const Question = () => {
 				</p>
 				<button className="rounded-full bg-indigo-600 px-5 py-3 text-white shadow-md outline-none ring-indigo-600 ring-offset-2 hover:bg-indigo-500 focus:shadow-none focus:ring-2 active:bg-indigo-700 sm:mt-0 sm:ml-3">
 					<a
-						href="https://discord.com/invite/utilityape"
+						href={discordLink}
 						target="_blank"
 						rel="noreferrer"
 					>

@@ -10,9 +10,9 @@ interface Props {
 
 export interface DDMItem {
 	icon?: JSX.Element;
-	label: string;
+	text: string;
 	desc?: string;
-	link?: string;
+	href?: string;
 }
 
 const DropDownMenu = (props: Props) => {
@@ -58,8 +58,8 @@ const DropDownMenu = (props: Props) => {
 					{props.items.map((item) => {
 						return (
 							<a
-								key={item.label}
-								href={item.link || "#"}
+								key={item.text}
+								href={item.href || "#"}
 								className={`${
 									item.icon ? "flex items-center" : "block"
 								} text-md block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:bg-gray-600 dark:hover:text-white`}
@@ -68,7 +68,7 @@ const DropDownMenu = (props: Props) => {
 								{item.icon}
 
 								<span className="flex flex-col">
-									<span>{item.label}</span>
+									<span>{item.text}</span>
 									{item.desc && (
 										<span className="text-xs text-gray-400">
 											{item.desc}

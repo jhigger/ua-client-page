@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
+import { discordLink, twitterLink } from "../links";
 
 const Footer = () => {
 	const iconLinks = [
 		{
 			icon: <FaTwitter />,
-			link: "https://twitter.com/utilityapeNFT",
+			link: twitterLink,
 		},
 		{
 			icon: <FaDiscord />,
-			link: "https://discord.com/invite/utilityape",
+			link: discordLink,
 		},
 	];
 

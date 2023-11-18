@@ -1,3 +1,5 @@
+import { links } from "../links";
+
 const Pricing = () => {
 	return (
 		<section className="grid grid-cols-1 gap-4 pt-20 font-inter md:grid-cols-12">
@@ -17,7 +19,9 @@ const Pricing = () => {
 					Buy a GEN 1, GEN 2, or Pixel UA to get a Discount.
 					Collections are self-deflationary for both GEN 2 and Pixel.{" "}
 					<a
-						href="https://holders.utilityape.com/"
+						href={
+							links.find(({ text }) => text === "Holders")?.href
+						}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-indigo-600 underline"
@@ -32,6 +36,8 @@ const Pricing = () => {
 };
 
 const Products = () => {
+	const dashboardLink = links.find(({ text }) => text === "Holders")?.href;
+
 	const products = [
 		{
 			product: "Engagement Bot",
@@ -41,7 +47,7 @@ const Products = () => {
 				"$200/mo for servers with more than 5k members",
 				"$300/mo for servers with more than 10k members + $100/mo for every additional 10k members.",
 			],
-			link: "https://dashboard.utilityape.com/",
+			link: dashboardLink,
 		},
 		{
 			product: "Security Bot",
@@ -49,12 +55,12 @@ const Products = () => {
 				"Free for Engagement bot clients",
 				"Standalone pricing: $40/mo for any server size",
 			],
-			link: "https://dashboard.utilityape.com/",
+			link: dashboardLink,
 		},
 		{
 			product: "NFT Toolbox",
 			list: ["$100/mo", "Add-on to Engagement or Security Bots"],
-			link: "https://dashboard.utilityape.com/",
+			link: dashboardLink,
 		},
 		{
 			product: "Enterprise",
@@ -62,7 +68,7 @@ const Products = () => {
 				"Starting price is $700/mo",
 				"Please contact SALES@UTILITYAPE.COM to discuss a customized solution",
 			],
-			link: "https://dashboard.utilityape.com/",
+			link: dashboardLink,
 		},
 	];
 
