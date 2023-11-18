@@ -36,7 +36,9 @@ const Pricing = () => {
 };
 
 const Products = () => {
-	const dashboardLink = links.find(({ text }) => text === "Holders")?.href;
+	const dashboardLink = links.find(
+		({ text }) => text === "Client Dashboard"
+	)?.href;
 
 	const products = [
 		{
